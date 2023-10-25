@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <h1>How Web Works Exercise</h1>
+    <h2>Part One: Solidify Terminology</h2>
+    <ol>
+        <li>What is HTTP?</li>
+            <p class="answer-section">HTTP is an abbreviation for Hypertext Transfer Protocol, which in layman's terms, is the way in which a browser communicates with a server.</p>
+        <li>What is a URL?</li>
+            <p class="answer-section">A URL is a string of information that acts as the "address" for a given resource. </p>
+        <li>What is DNS?</li>
+            <p class="answer-section">DNS is the abbreviation for domain name service, which acts as the "phonebook" of the internet. It translates between human readable information, such as website names, to computer readable information, or IP addresses. </p>
+        <li>What is a query string?</li>
+            <p class="answer-section">A query string is a string added onto a website's URL, that pass specific information into the web browser, and change the user experience. </p>
+        <li>What are two HTTP verbs and how are they different?</li>
+            <p class="answer-section">Two HTTP verbs are GET and POST.</p> 
+            <p class="answer-section">GET requests information from the source, and retrieves said data, without changing the server's data.</p> 
+            <p class="answer-section">POST submits information to the source, and will change the server's data in some way.</p>
+        <li>What is an HTTP request?</li>
+            <p class="answer-section">An HTTP request is typically a GET request, in which your browser is asking the server for specific information, usually in the form of a URL.</p> 
+        <li>What is an HTTP response?</li>
+            <p class="answer-section"> An HTTP response is the reaction to a request, the server sending back the requested date, for example, the HTML text for the given URL webpage.</p>
+        <li>What is an HTTP header? Give a couple examples of request and response headers you have seen.</li>
+            <p class="answer-section">A header contains the information of a request. This will include metadata such as language, the date, the format of the data, etc. </p>
+        <li>What are the processes that happen when you type “http://somesite.com/some/page.html” into a browser?</li>
+            <p class="answer-section">When one types “http://somesite.com/some/page.html” into the browser, the browser sends a GET request to the server. If the server has the information related to said URL, it will send said information back, rendering the data as a webpage. The browser will send multiple requests, depending on the contents of the request, including, for example, the html code, as well as linked css, javascript, and any other relevant links such as images.</p>
+    </ol>
+    <h2>Part Two: Practice Tools</h2>
+    <ol>
+        <li>Using <i><bold>curl</bold></i>, make a <i><bold>GET</bold></i> request to the <i>icanhazdadjoke.com</i> API to find all jokes involving the word "pirate".</li>
+       <div class="answer-section">
+        <p>curl https://icanhazdadjoke.com/search?term=pirate</p>
+        <ul>
+            <li>What does a pirate pay for his corn? A buccaneer!</li>
+            <li>What did the pirate say on his 80th birthday? Aye Matey!</li>
+            <li> Why couldn't the kid see the pirate movie? Because it was rated arrr!</li>
+            <li> Why do pirates not know the alphabet? They always get stuck at "C".</li>
+            <li> Why are pirates called pirates? Because they arrr!</li>
+        </ul>
+     </p> </div>
+     
+     <li>Use <i><bold>dig</bold></i> to find what the IP address is for <i>icanhazdadjoke.com</i></li>
+     
+     <div class="answer-section">
+            <p>dig icanhazdadjoke.com</p>
+            <div>104.21.66.15</div>
+            <div>172.67.198.173</div>
+     </div>
+     </ol>
+    <h2>Part Three: Explore Dev Tools</h2>
+    <form>
+        <input type="text" placeholder="Type something here then test to test the GET method!">
+        <button type="submit">Submit</button>
+    </form>
+    
+    <script src="app.js"></script>
+</body>
+</html>
